@@ -1,0 +1,214 @@
+.nav__list-item {
+  padding: 22px 5px 10px;
+  color: #3d4b6d;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+.nav__list-item:hover,
+.active {
+  background-color: rgb(241, 241, 241);
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+}
+.nav__list-item a i {
+  font-size: 40px;
+  color: #b097db;
+}
+
+.canvas-sheet {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-bars {
+  z-index: 99;
+}
+
+.board-name {
+  margin-top: 15px;
+}
+
+.board-name p {
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+.grid-menu-item {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  font-size: 25px;
+  margin: 30px 0px 0px 20px;
+  row-gap: 30px;
+}
+
+.offcanvas {
+  max-width: 350px !important; /* Adjust the width as needed */
+}
+
+.grid-menu-color {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  /* column-gap: 5px; */
+  /* margin: 5px; */
+}
+
+.color {
+  -webkit-appearance: none;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+}
+.color::-webkit-color-swatch {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+.color::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.color:focus {
+  border-color: #6265e4 !important;
+  box-shadow: 0 0 5px rgba(98, 101, 228, 1) !important;
+}
+
+.button-text button {
+  font-size: 20px;
+  height: 40px;
+  padding-top: 4px !important;
+}
+
+.save-btn {
+  background: #6535c6 !important;
+  color: white !important;
+}
+
+.cancel-btn {
+  background: #d9d9d9 !important;
+  color: black !important;
+}
+
+.inputWrapper {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.fileInput {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+
+.zoom-menu {
+  position: fixed !important;
+  bottom: 0;
+  width: 100%;
+}
+
+a.heading-tag {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+}
+.budget-summary-box .heading-tag {
+  font-size: 18px !important;
+  line-height: 26px !important;
+}
+.budget-summary-box .para-one {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
+.profile-pic {
+  padding: 20px;
+  border: 1px solid #e5e9f2;
+  /* position: relative;
+  display: inline-block;
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%; */
+  transition: transform 0.4s ease-in-out;
+}
+.profile-pic:hover {
+  border: 1px solid #6535c680;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+  z-index: 999999;
+}
+
+.para-one {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.0064em;
+  color: #a7b2cc;
+}
+
+.img-tab {
+  margin: 0 auto;
+  max-width: 75%;
+  padding: 55px;
+}
+
+#canvas {
+  background: #ebebeb;
+}
+.bottom-navbar {
+  z-index: 2;
+  margin-left: 100px;
+}
+
+.bottom-navbar button {
+  padding: 12px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.sample-canvas {
+  height: 90vh;
+}
+
+.terrain-btn {
+  padding: 40px;
+  border-radius: 5px;
+}
+.btn-1 {
+  background: url("https://www.quickanddirtytips.com/sites/default/files/styles/article_main_image/public/images/19571/astronaut-in-space-compressor.png?itok=3xPZVjBk");
+  background-color: transparent;
+  border: 1px solid;
+}
+.btn-2 {
+  background: url("../images/terrain/Grass.png");
+}
+.btn-3 {
+  background: url("../images/terrain/Water.png");
+}
+.btn-4 {
+  background: url("../images/terrain/Other.png");
+}
+.terrain-btn:hover {
+  cursor: pointer;
+}
