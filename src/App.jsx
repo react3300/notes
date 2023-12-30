@@ -8,7 +8,6 @@ const App = () => {
   return (
     <>
       {
-      
           <Allroutes isAuthenticated={isAuthenticated} />
       }
     </>
