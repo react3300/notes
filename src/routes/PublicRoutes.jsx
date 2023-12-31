@@ -10,13 +10,13 @@ import SignIn from '../pages/signIn';
 
 const PublicRoutes = () => {
     return (
-            <Routes>
-                <Route path="login" element={<SignIn />} />
-                <Route path="loginone" element={<SignUp />} />
-                <Route path="boards" element={<Boards />} />
-                <Route path="board" element={<Board />} />
-                <Route path="not-found" element={<NotFound />} />
-            </Routes>
+        <Routes>
+            <Route path="sign-in" element={<SignIn />} />
+            <Route path="sign-up" element={<SignUp />} />
+            <Route path="boards" element={<Boards />} />
+            <Route path="board" element={<Board />} />
+            <Route path="not-found" element={<NotFound />} />
+        </Routes>
     );
 };
 

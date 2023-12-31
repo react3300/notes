@@ -1,19 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.heading-font {
+  font-weight: 700;
+}
+
 .nav__list-item {
-  padding: 22px 5px 10px;
+  padding: 5px 5px;
   color: #3d4b6d;
   margin-top: 10px;
   margin-left: 10px;
   height: 80px;
   width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.nav-button {
+  padding: 6px 22px;
 }
 
 .nav__list-item:hover,
 .active {
-  background-color: rgb(241, 241, 241);
+  background-color: #AF97E0;
   border-radius: 50%;
   cursor: pointer;
   color: #fff;
 }
+
 .nav__list-item a i {
   font-size: 40px;
   color: #b097db;
@@ -49,7 +76,8 @@
 }
 
 .offcanvas {
-  max-width: 350px !important; /* Adjust the width as needed */
+  max-width: 350px !important;
+  /* Adjust the width as needed */
 }
 
 .grid-menu-color {
@@ -67,11 +95,13 @@
   width: 50px;
   height: 50px;
 }
+
 .color::-webkit-color-swatch {
   border: none;
   border-radius: 10px;
   padding: 0;
 }
+
 .color::-webkit-color-swatch-wrapper {
   border: none;
   border-radius: 10px;
@@ -122,15 +152,20 @@
   width: 100%;
 }
 
-a.heading-tag {
+p.heading-tag {
   color: #000000;
   font-weight: 700;
   text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 .budget-summary-box .heading-tag {
   font-size: 18px !important;
   line-height: 26px !important;
 }
+
 .budget-summary-box .para-one {
   font-size: 16px !important;
   line-height: 24px !important;
@@ -139,20 +174,28 @@ a.heading-tag {
 .profile-pic {
   padding: 20px;
   border: 1px solid #e5e9f2;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 5px;
   /* position: relative;
   display: inline-block;
   background: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
   width: 100%; */
-  transition: transform 0.4s ease-in-out;
+  /* transition: transform 0.4s ease-in-out; */
 }
+
 .profile-pic:hover {
-  border: 1px solid #6535c680;
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  border: 3px solid rgba(101, 53, 198, 0.50);
+  background: #FFF;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.10);
+  /* border: 1px solid #6535c680;
+  -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
   transform: scale(1.1);
-  z-index: 999999;
+  z-index: 999999; */
 }
 
 .para-one {
@@ -173,6 +216,7 @@ a.heading-tag {
 #canvas {
   background: #ebebeb;
 }
+
 .bottom-navbar {
   z-index: 2;
   margin-left: 100px;
@@ -195,20 +239,72 @@ a.heading-tag {
   padding: 40px;
   border-radius: 5px;
 }
+
 .btn-1 {
   background: url("https://www.quickanddirtytips.com/sites/default/files/styles/article_main_image/public/images/19571/astronaut-in-space-compressor.png?itok=3xPZVjBk");
   background-color: transparent;
   border: 1px solid;
 }
+
 .btn-2 {
   background: url("../images/terrain/Grass.png");
 }
+
 .btn-3 {
   background: url("../images/terrain/Water.png");
 }
+
 .btn-4 {
   background: url("../images/terrain/Other.png");
 }
+
 .terrain-btn:hover {
   cursor: pointer;
+}
+
+.side-button {
+  display: flex;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -10px;
+  top: 16px;
+}
+
+@media (min-width: 767px) {
+  .side-button {
+    display: none;
+  }
+
+  .formik-width {
+    width: 75% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.form-hv {
+  background: #FAFAFA !important;
+  height: 100vh !important;
+}
+
+.sign-button {
+  border-radius: 5px;
+  background: #6535C6 !important;
+}
+
+.field_error {
+  color: #ff3434;
+  font-size: 12px;
+}
+
+.sign-side-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+.hv-100{
+  height: 100vh !important;
 }

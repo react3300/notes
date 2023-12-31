@@ -81,7 +81,7 @@ const Boards = () => {
       budget_start_date: "2021-08-01",
       budget_end_date: "2021-08-31",
     },
-    
+
   ];
   return (
     <div className="section" style={{ height: "100vh", position: "relative" }}>
@@ -120,15 +120,15 @@ const Boards = () => {
         </nav> */}
 
         <div className="flex-fill menu-bars">
-          <div className="row">
+          <div className="row py-3">
             <div className="col-lg-6 col-md-6 col-6">
-              <h1 className="heading-font">
-                <b>Your visual boards</b>
-              </h1>
+              <h2 className="heading-font">
+                Your visual boards
+              </h2>
             </div>
             <div className="col-lg-6 col-md-6 col-6">
-              <button type="button" className="btn btn-primary float-right"
-              style={{backgroundColor: "#6535C6", border: "none", fontWeight: 600 }}
+              <button type="button" className="btn btn-primary nav-button float-right"
+                style={{ backgroundColor: "#6535C6", border: "none", fontWeight: 600 }}
               >
                 <span>+</span> New Board
               </button>
@@ -146,10 +146,15 @@ const Boards = () => {
                 );
               })
             ) : (
-              <center>
-                <h4>Organize your ideas today</h4>
-                <p>Create your first visual board in a matter of seconds</p>
-                <a href="#">Create visual board</a>
+              <center className="align-items-center justify-content-center d-flex my-5">
+                <div className="d-block">
+                  <h4><b>Organize your ideas today</b></h4>
+                  <p>Create your first visual board in a matter of seconds</p>
+                  <button type="button" className="btn btn-primary nav-button"
+                    style={{ backgroundColor: "#6535C6", border: "none", fontWeight: 600 }}>
+                    Create visual board
+                  </button>
+                </div>
               </center>
             )}
           </div>
